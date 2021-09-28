@@ -3,6 +3,8 @@ import { useEffect } from 'react'
 import problems from '../assets/99problems.jpeg'
 import britney from '../assets/britney.jpeg'
 import nobodyAsked from '../assets/nobodyAsked.jpeg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUsers, faArrowAltCircleLeft, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
 
 const TheOfficeCarousel = () => {
 
@@ -29,11 +31,15 @@ const TheOfficeCarousel = () => {
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#theOfficeCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <i class="fas fa-arrow-alt-circle-left">
+            <FontAwesomeIcon icon={faArrowAltCircleLeft} style={{height: '50px', width: 'auto'}}/>
+          </i>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#theOfficeCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <i class="fas fa-arrow-alt-circle-right">
+            <FontAwesomeIcon icon={faArrowAltCircleRight} style={{height: '50px', width: 'auto'}}/>
+          </i>
           <span class="visually-hidden">Next</span>
         </button>
       </div>

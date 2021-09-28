@@ -4,7 +4,7 @@ import problems from '../assets/99problems.jpeg'
 import britney from '../assets/britney.jpeg'
 import nobodyAsked from '../assets/nobodyAsked.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUsers, faArrowAltCircleLeft, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
+import { faArrowAltCircleLeft, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
 
 const TheOfficeCarousel = () => {
 

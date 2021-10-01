@@ -42,14 +42,14 @@ const TheOfficeCarousel = () => {
           </i>
           <span className="visually-hidden">Next</span>
         </button>
-        <div className="carousel-indicators">
+        <ul className="carousel-indicators">
           {/* <button type="button" data-bs-target="#theOfficeCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#theOfficeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#theOfficeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> */}
           {[...Array(3)].map((item, i) => {
             return <li key={i} className={`bg-secondary ${i === 0 ? 'active' : ''}`} data-bs-target="#theOfficeCarousel" data-bs-slide-to={i} aria-current='true' aria-label={`Slide ${i}`}></li>
           })}
-        </div>
+        </ul>
       </div>
     </div>
   )

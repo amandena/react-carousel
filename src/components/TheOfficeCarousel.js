@@ -44,7 +44,7 @@ const TheOfficeCarousel = () => {
         </button>
         <ul className="carousel-indicators">
           {[...Array(3)].map((item, i) => {
-            return <li key={i} className={`bg-secondary ${i === 0 ? 'active' : ''}`} data-bs-target="#theOfficeCarousel" data-bs-slide-to={i} aria-current='true' aria-label={`Slide ${i}`}></li>
+            return <li key={`${item}-${i}`} className={`bg-secondary ${i === 0 ? 'active' : ''}`} data-bs-target="#theOfficeCarousel" data-bs-slide-to={i} aria-current='true' aria-label={`Slide ${i}`}></li>
           })}
         </ul>
       </div>

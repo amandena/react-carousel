@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import TheOfficeCarousel from './components/TheOfficeCarousel'
 
 function App() {

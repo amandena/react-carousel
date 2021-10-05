@@ -1,0 +1,23 @@
+.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -10px;
+  left: 0;
+  right: 0;
+  width: auto;
+}
+
+.carousel-indicators li, .carousel-indicators li.active {
+  float: left;
+  width: 33% !important;
+  height: 10px !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+  background: plum !important;
+}
+
+.fa-arrow-alt-circle-left, .fa-arrow-alt-circle-right {
+  color: rgb(64, 249, 255) !important;
+}
+

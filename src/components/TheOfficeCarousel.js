@@ -21,13 +21,13 @@ const TheOfficeCarousel = () => {
       <div id="theOfficeCarousel" className="carousel slide">
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={problems} className="officeImage d-block" alt="99 problems" style={{backgroundImage: `url(${problems})`, backgroundSize: 'cover', backgroundPosition: 'center'}}/>
+            <img src={problems} className="officeImage d-block w-100" alt="99 problems"/>
           </div>
           <div className="carousel-item">
-            <img src={britney} className="officeImage d-block" alt="It's Britney, b*tch" style={{backgroundImage: `url(${britney})`, backgroundSize: 'cover', backgroundPosition: 'center'}}/>
+            <img src={britney} className="officeImage d-block w-100" alt="It's Britney, b*tch"/>
           </div>
           <div className="carousel-item">
-            <img src={nobodyAsked} className="officeImage d-block" alt="nobody asked" style={{backgroundImage: `url(${nobodyAsked})`, backgroundSize: 'cover', backgroundPosition: 'center'}}/>
+            <img src={nobodyAsked} className="officeImage d-block w-100" alt="nobody asked"/>
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#theOfficeCarousel" data-bs-slide="prev">

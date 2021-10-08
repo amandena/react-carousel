@@ -3,6 +3,8 @@ import { useEffect } from 'react'
 import problems from '../assets/99problems.jpeg'
 import britney from '../assets/britney.jpeg'
 import nobodyAsked from '../assets/nobodyAsked.jpeg'
+import dead from '../assets/dead.jpeg'
+import anxiety from '../assets/anxiety.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowAltCircleLeft, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
 
@@ -29,6 +31,12 @@ const TheOfficeCarousel = () => {
           <div className="carousel-item">
             <img src={nobodyAsked} className="officeImage d-block w-100" alt="nobody asked"/>
           </div>
+          <div className="carousel-item">
+            <img src={dead} className="officeImage d-block w-100" alt="dead inside"/>
+          </div>
+          <div className="carousel-item">
+            <img src={anxiety} className="officeImage d-block w-100" alt="anxiety"/>
+          </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#theOfficeCarousel" data-bs-slide="prev">
           <i className="fas fa-arrow-alt-circle-left">
@@ -43,7 +51,7 @@ const TheOfficeCarousel = () => {
           <span className="visually-hidden">Next</span>
         </button>
         <ul className="carousel-indicators">
-          {[...Array(3)].map((item, i) => {
+          {[...Array(5)].map((item, i) => {
             return <li key={`${item}-${i}`} className={`bg-secondary ${i === 0 ? 'active' : ''}`} data-bs-target="#theOfficeCarousel" data-bs-slide-to={i} aria-current='true' aria-label={`Slide ${i}`}></li>
           })}
         </ul>
